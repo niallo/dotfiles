@@ -1,0 +1,41 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" " alternatively, pass a path where Vundle should install plugins
+" "call vundle#begin('~/some/path/here')
+"
+" " let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'vcscommand.vim'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'kien/ctrlp.vim'
+Bundle "pangloss/vim-javascript"
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+set bg=dark
+set tabstop=4
+set expandtab
+set shiftwidth=4
+map C  :VCSCommit<CR>
+map D  :VCSDiff<CR>
+"au BufRead *.js
+" Use tab to scroll through autocomplete menus
+autocmd filetype javascript set sw=2 ts=2 expandtab
+syntax on
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+"let g:acp_completeoptPreview=1
+let g:airline#extensions#tabline#enabled = 1
+set completeopt-=preview
+let mapleader = "\<Space>"
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
