@@ -8,7 +8,7 @@ VIM = /usr/local/bin/vim
 VIM_VERSION = 7.4.1817
 VIM_TARBALL = $(HOME)/v$(VIM_VERSION).tar.gz
 VIM_URL = https://github.com/vim/vim/archive/v$(VIM_VERSION).tar.gz
-VIM_SRC = $(HOME)/vim-$(VIM_VERSION)/
+VIM_SRC = $(HOME)/vim-$(VIM_VERSION)/_stamp
 
 TMUX = /usr/bin/tmux
 TMUX_CONF = $(HOME)/.tmux.conf
@@ -33,9 +33,10 @@ $(VIM_TARBALL):
 
 $(VIM_SRC): $(VIM_TARBALL)
 	tar -C $(HOME) -xzf $(VIM_TARBALL)
+	touch $(VIM_SRC)
 
 $(VIM): $(VIM_SRC)
-	(cd $(VIM_SRC) && ./configure --prefix=/usr/local --enable-pythoninterp && make && sudo make install)
+	(cd $$(dirname $(VIM_SRC)) && ./configure --prefix=/usr/local --enable-pythoninterp && make && sudo make install)
 
 $(TMUX):
 	echo 'Installing tmux'
