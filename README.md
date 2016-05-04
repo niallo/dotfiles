@@ -2,15 +2,15 @@
 
 ## Installation
 
-`make all` should work on an ubuntu system. You might need other system
-packages such as build-essential and python which I haven't bothered listing.
+`make all` should work to install these on an Ubuntu system.
+
+You might need other system packages such as build-essential and python which I
+haven't bothered listing.
 
 ### Zsh plugins:
 
 - Oh-My-ZSH [ https://github.com/robbyrussell/oh-my-zsh ] (Nice prompt & plugins for Zsh)
-  + `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 - scm_breeze [ https://github.com/ndbroadbent/scm_breeze ] (Great Git shortcuts for Zsh)
-  + `git clone git://github.com/ndbroadbent/scm_breeze.git ~/.scm_breeze ; ~/.scm_breeze/install.sh`
 
 ### ViM plugins:
 
@@ -23,6 +23,6 @@ packages such as build-essential and python which I haven't bothered listing.
 
 ### tmux config
 - M-A modifier
-- '-' to split horizontally
-- '|' to split vertically
+- M-<-> to split horizontally
+- M-<|> to split vertically
 - M-<arrow> move panes
