@@ -36,7 +36,8 @@ $(VIM_SRC): $(VIM_TARBALL)
 	touch $(VIM_SRC)
 
 $(VIM): $(VIM_SRC)
-	(cd $$(dirname $(VIM_SRC)) && ./configure --prefix=/usr/local --enable-pythoninterp && make && sudo make install)
+	(cd $$(dirname $(VIM_SRC)) && ./configure --prefix=/usr/local \
+		 --enable-pythoninterp && make && sudo make install)
 
 $(TMUX):
 	echo 'Installing tmux'
