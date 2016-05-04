@@ -10,6 +10,9 @@ VIM_TARBALL = $(HOME)/v$(VIM_VERSION).tar.gz
 VIM_URL = https://github.com/vim/vim/archive/v$(VIM_VERSION).tar.gz
 VIM_SRC = $(HOME)/vim-$(VIM_VERSION)/
 
+TMUX = /usr/bin/tmux
+TMUX_CONF = $(HOME)/.tmux.conf
+
 .PHONY: all
 
 $(ZSH):
@@ -33,5 +36,12 @@ $(VIM_SRC): $(VIM_TARBALL)
 
 $(VIM): $(VIM_SRC)
 	(cd $(VIM_SRC) && ./configure --prefix=/usr/local --enable-pythoninterp && make && sudo make install)
+
+$(TMUX):
+	echo 'Installing tmux'
+	sudo apt-get install -y tmux
+
+$(TMUX_CONF): $(TMUX)
+	cp tmux/tmux.conf $(HOME)/.tmux.conf
 		
-all: $(VIM) $(ZSH) $(OH_MY_ZSH) $(SCM_BREEZE)
+all: $(VIM) $(ZSH) $(OH_MY_ZSH) $(SCM_BREEZE) $(TMUX_CONF)
