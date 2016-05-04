@@ -1,7 +1,7 @@
 
 
 ZSH = /usr/bin/zsh
-OH_MY_ZSH_URL = https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)
+OH_MY_ZSH_URL = https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
 OH_MY_ZSH = $(HOME)/.oh-my-zsh
 SCM_BREEZE = $(HOME)/.scm_breeze
 VIM = /usr/local/bin/vim
