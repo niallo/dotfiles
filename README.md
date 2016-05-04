@@ -1,3 +1,10 @@
+# Niall's dot files
+
+## Installation
+
+`make all` should work on an ubuntu system. You might need other system
+packages such as build-essential and python which I haven't bothered listing.
+
 ### Zsh plugins:
 
 - Oh-My-ZSH [ https://github.com/robbyrussell/oh-my-zsh ] (Nice prompt & plugins for Zsh)
