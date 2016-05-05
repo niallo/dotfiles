@@ -21,8 +21,9 @@ TMUX_CONF = $(HOME)/.tmux.conf
 .PHONY: all
 
 $(ZSH):
-	echo 'Installing ZSH'
+	echo 'Installing ZSH and making default shell'
 	sudo apt-get install -y zsh
+	sudo chsh -s /usr/bin/zsh $(whoami)
 
 $(OH_MY_ZSH): $(ZSH)
 	echo 'Installing Oh-my-Zsh'
