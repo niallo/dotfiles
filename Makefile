@@ -26,7 +26,7 @@ $(ZSH):
 
 $(OH_MY_ZSH): $(ZSH)
 	echo 'Installing Oh-my-Zsh'
-	sh -c "$(curl -fsSL $(OH_MY_ZSH_URL))"
+	sh -c "$$(curl -fsSL $(OH_MY_ZSH_URL))"
 
 $(SCM_BREEZE): $(ZSH)
 	echo 'Installing scm_breeze'
