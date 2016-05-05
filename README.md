@@ -9,19 +9,20 @@ haven't bothered listing.
 
 ### Zsh plugins:
 
-- Oh-My-ZSH [ https://github.com/robbyrussell/oh-my-zsh ] (Nice prompt & plugins for Zsh)
-- scm_breeze [ https://github.com/ndbroadbent/scm_breeze ] (Great Git shortcuts for Zsh)
+- Oh-My-ZSH [Nice prompt & plugins for Zsh](https://github.com/robbyrussell/oh-my-zsh)
+- scm_breeze [Great Git shortcuts for Zsh](https://github.com/ndbroadbent/scm_breeze)
 
 ### ViM plugins:
 
-- Vundle [ https://github.com/VundleVim/Vundle.vim ] (ViM plugin manager)
-- jedi-vim [ https://github.com/davidhalter/jedi-vim ] (Nice completion for Python)
-- Syntastic [ https://github.com/scrooloose/syntastic ] (Run syntax checkers)
-- Vim python pep 8 indent [ https://github.com/hynek/vim-python-pep8-indent ] (Good Python indentation)
-- CtrlP [ https://github.com/kien/ctrlp.vim ] (Fuzzy file opener etc)
-- vim-javascript [ https://github.com/pangloss/vim-javascript ] (Nice indentation & syntax for JavaScript)
+- Vundle [ViM plugin manager](https://github.com/VundleVim/Vundle.vim)
+- jedi-vim [Nice completion for Python](https://github.com/davidhalter/jedi-vim)
+- Syntastic [Run syntax checkers](https://github.com/scrooloose/syntastic)
+- Vim python pep 8 indent [Good Python indentation](https://github.com/hynek/vim-python-pep8-indent)
+- CtrlP [Fuzzy file opener etc](https://github.com/kien/ctrlp.vim)
+- vim-javascript [Nice indentation & syntax for JavaScript](https://github.com/pangloss/vim-javascript)
 
 ### tmux config
+- Monochrome status bar instead of garish green one
 - M-A modifier
 - M-<-> to split horizontally
 - M-<|> to split vertically
