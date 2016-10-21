@@ -6,7 +6,7 @@ OH_MY_ZSH = $(HOME)/.oh-my-zsh
 SCM_BREEZE = $(HOME)/.scm_breeze
 VIM = /usr/local/bin/vim
 
-VIM_VERSION = 8.0.0003
+VIM_VERSION = 8.0.0045
 VIM_TARBALL = $(HOME)/v$(VIM_VERSION).tar.gz
 VIM_URL = https://github.com/vim/vim/archive/v$(VIM_VERSION).tar.gz
 VIM_SRC = $(HOME)/vim-$(VIM_VERSION)/_stamp
